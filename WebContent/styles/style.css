@@ -1,0 +1,94 @@
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+header {
+    color: #f5f0f0;
+    top: 0%;
+    background-color: #4c68a1;
+    min-width: 100%;
+    position: fixed;
+    left: 0%;
+    font-size: 30px;
+}
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+footer {
+    bottom: 0%;
+    background-color: #bbbfbd;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    padding: 10px;
+}
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+nav {
+    font-size: 12px;
+    margin-left: 90%;
+    top: 1%;
+    position: fixed;
+}
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+nav .movies {
+    color: #f5f0f0;
+    margin-right: 60px;
+}
+/*Movie List Customer,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+nav .favorites {
+    color: #f5f0f0;
+}
+/*Edit Movie Status,Movie List Customer(Add to Favorites success),Remove Favorites*/
+.paragraph {
+    color: #3b9c55;
+}
+/*Favorites Empty*/
+#paragraph {
+    color: #bbbfbd;
+}
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+body {
+    margin-left: 3%;
+    top: 8%;
+    position: fixed;
+}
+/*Movie List Admin,Movie List Customer,Movie List Customer (Add to Favorites success),Favorites,Remove Favorites*/
+.align-left {
+    text-align: left;
+}
+/*Movie List Admin,Movie List Customer,Movie List Customer (Add to Favorites success),Favorites,Remove Favorites*/
+.align-right {
+    text-align: right;
+    width: 25px;
+}
+/*Movie List Admin,Movie List Customer,Movie List Customer (Add to Favorites success),Favorites,Remove Favorites*/
+.align-mid {
+    text-align: center;
+    width: 110px;
+}
+/*Edit Movie*/
+span {
+    display: inline-block;
+}
+/*Movie List Admin,Movie List Customer,Edit Movie,Edit Movie Status,Movie List Customer (Add to Favorites success),Favorites,Favorites Empty,Remove Favorites*/
+.heading {
+    margin-right: 70px;
+}
+/*Edit Movie*/
+.padding {
+    padding-left: 10px;
+}
+/*Edit Movie*/
+.padding-bottom {
+    padding-bottom: 20px;
+}
+/*Edit Movie*/
+.submit {
+    background-color: #355487;
+    color: #f5f0f0;
+    height: 50px;
+    width: 150px;
+}
+/*Edit Movie*/
+.checkbox {
+    padding-bottom: 20px;
+}
+/*Favorites Empty*/
+.movie-list {
+    color: #1eaee3;
+}
