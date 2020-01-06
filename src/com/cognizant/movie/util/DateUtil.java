@@ -11,7 +11,7 @@ public class DateUtil {
             format.setLenient(false);
             return format.parse(date);
         } catch (ParseException e) {
-            System.out.println("Date/Format Went Wrong");
+            System.out.println("Date Format Went Wrong");
         }
         return null;
     }
