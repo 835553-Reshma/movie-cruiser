@@ -12,22 +12,22 @@ public class MovieDaoCollectionImpl implements MovieDao {
 
     public MovieDaoCollectionImpl() {
         if (movieLists == null || movieLists.isEmpty()) {
-            Movie item1 = new Movie(1, "Avatar", 2787965087L, true,
+            Movie movie1 = new Movie(1, "Avatar", 2787965087L, true,
                     DateUtil.convertToDate("15/03/2017"), "Science Fiction", true);
-            Movie item2 = new Movie(2, "The Avengers", 1518812988L, true,
+            Movie movie2 = new Movie(2, "The Avengers", 1518812988L, true,
                     DateUtil.convertToDate("23/12/2017"), "Superhero", false);
-            Movie item3 = new Movie(3, "Titanic", 2187463944L, true,
+            Movie movie3 = new Movie(3, "Titanic", 2187463944L, true,
                     DateUtil.convertToDate("21/08/2017"), "Romance", false);
-            Movie item4 = new Movie(4, "Jurassic World", 1671713208L, false,
+            Movie movie4 = new Movie(4, "Jurassic World", 1671713208L, false,
                     DateUtil.convertToDate("02/07/2017"), "Science Fiction", true);
-            Movie item5 = new Movie(5, "Avengers:End Game", 2750760348L, true,
+            Movie movie5 = new Movie(5, "Avengers:End Game", 2750760348L, true,
                     DateUtil.convertToDate("02/11/2022"), "Superhero", true);
             movieLists = new ArrayList<Movie>();
-            movieLists.add(item1);
-            movieLists.add(item2);
-            movieLists.add(item3);
-            movieLists.add(item4);
-            movieLists.add(item5);
+            movieLists.add(movie1);
+            movieLists.add(movie2);
+            movieLists.add(movie3);
+            movieLists.add(movie4);
+            movieLists.add(movie5);
         }
     }
 
