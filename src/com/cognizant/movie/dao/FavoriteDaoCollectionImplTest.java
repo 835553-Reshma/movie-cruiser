@@ -33,7 +33,7 @@ public class FavoriteDaoCollectionImplTest {
             for (Movie movieLists : list) {
                 System.out.println(movieLists);
             }
-            System.out.println("Movies:" + favoriteDao.getAllFavorites(1).getTotal());
+            System.out.println("No.of Favorites:" + favoriteDao.getAllFavorites(1).getTotal());
         } catch (FavoriteEmptyException e) {
             System.err.println(e);
         }
