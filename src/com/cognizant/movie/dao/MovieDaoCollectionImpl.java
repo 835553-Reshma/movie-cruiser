@@ -12,15 +12,15 @@ public class MovieDaoCollectionImpl implements MovieDao {
 
     public MovieDaoCollectionImpl() {
         if (movieLists == null || movieLists.isEmpty()) {
-            Movie movie1 = new Movie(1, "Avatar", 2787965087L, true,
+            Movie movie1 = new Movie(1, "Avatar", "$2,787,965,087", true,
                     DateUtil.convertToDate("15/03/2017"), "Science Fiction", true);
-            Movie movie2 = new Movie(2, "The Avengers", 1518812988L, true,
+            Movie movie2 = new Movie(2, "The Avengers", "$1,518,812,988", true,
                     DateUtil.convertToDate("23/12/2017"), "Superhero", false);
-            Movie movie3 = new Movie(3, "Titanic", 2187463944L, true,
+            Movie movie3 = new Movie(3, "Titanic", "$2,187,463,944", true,
                     DateUtil.convertToDate("21/08/2017"), "Romance", false);
-            Movie movie4 = new Movie(4, "Jurassic World", 1671713208L, false,
+            Movie movie4 = new Movie(4, "Jurassic World", "$1,671,713,208", false,
                     DateUtil.convertToDate("02/07/2017"), "Science Fiction", true);
-            Movie movie5 = new Movie(5, "Avengers:End Game", 2750760348L, true,
+            Movie movie5 = new Movie(5, "Avengers:End Game", "$2,750,760,348", true,
                     DateUtil.convertToDate("02/11/2022"), "Superhero", true);
             movieLists = new ArrayList<Movie>();
             movieLists.add(movie1);

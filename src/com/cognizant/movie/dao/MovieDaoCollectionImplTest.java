@@ -12,6 +12,7 @@ public class MovieDaoCollectionImplTest {
         testGetMovieListAdmin();
         testGetMovieListCustomer();
         testEditMovie();
+        testGetMovieListAdmin();
         testGetMovie();
     }
 
@@ -40,7 +41,7 @@ public class MovieDaoCollectionImplTest {
         System.out.println("Edit Movie");
         System.out.printf("%-20s%-20s%-20s%-20s%-20s%-20s%-20s\n", "Id", "Title", "Box Office",
                 "Active", "Date of Launch", "Genre", "Has Teaser");
-        Movie movie = new Movie(1, "Bhahubali", 9234567823L, true,
+        Movie movie = new Movie(1, "Bhahubali", "$9,234,567,823", true,
                 DateUtil.convertToDate("02/01/2020"), "Historical", false);
         moviedao.modifyMovieList(movie);
         System.out.println(movie);
