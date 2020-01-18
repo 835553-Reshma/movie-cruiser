@@ -1,5 +1,5 @@
-function valid() {
-    var title = document.forms["movie"]["title"].value;
+function validateMovieForm() {
+    var title = document.forms["movieForm"]["title"].value;
     if (title == "") {
         alert("Title is required.");
         return false;
@@ -8,7 +8,7 @@ function valid() {
         alert("Title should have 2 to 100 characters.");
         return false;
     }
-    var boxOffice = document.forms["movie"]["boxOffice"].value;
+    var boxOffice = document.forms["movieForm"]["boxOffice"].value;
     if (boxOffice == "") {
         alert("Box Office is required.");
         return false;
@@ -17,12 +17,12 @@ function valid() {
         alert("Box Office has to be a number.");
         return false;
     }
-    var dateOfLaunch = document.forms["movie"]["dateOfLaunch"].value;
+    var dateOfLaunch = document.forms["movieForm"]["dateOfLaunch"].value;
     if (dateOfLaunch == "") {
         alert("Date of Launch is required.");
         return false;
     }
-    var genre = document.forms["movie"]["genre"].value;
+    var genre = document.forms["movieForm"]["genre"].value;
     if (genre == "") {
         alert("Select one genre.");
         return false;
