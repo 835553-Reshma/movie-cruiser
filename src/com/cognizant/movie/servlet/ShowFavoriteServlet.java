@@ -15,24 +15,21 @@ import com.cognizant.movie.dao.FavoriteEmptyException;
 import com.cognizant.movie.model.Favorite;
 import com.cognizant.movie.model.Movie;
 
-
 /**
  * Servlet implementation class ShowFavoriteServlet
  */
 @WebServlet("/ShowFavorite")
 public class ShowFavoriteServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    try {
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
             long userId = 1L;
             FavoriteDao favoriteDao = new FavoriteDaoCollectionImpl();
             Favorite favorite = favoriteDao.getAllFavorites(userId);
             List<Movie> movieList = favorite.getFavoriteList();
-            int price = 0;
-            for (Movie movie : movieList) {
-                price = (int) (price + movie.getMovieId());
-            }
+            int price = movieList.size();
             favorite.setTotal(price);
             request.setAttribute("movie", movieList);
             request.setAttribute("favorite", favorite);
@@ -40,6 +37,6 @@ public class ShowFavoriteServlet extends HttpServlet {
         } catch (FavoriteEmptyException e) {
             request.getRequestDispatcher("favorites-empty.jsp").forward(request, response);
         }
-	}
+    }
 
 }
