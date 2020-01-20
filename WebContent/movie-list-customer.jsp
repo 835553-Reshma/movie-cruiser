@@ -23,21 +23,21 @@
         <tr>
             <th align="left" width=30%>Title</th>
             <th class="align-right">Box Office</th>
-            <th class="align-mid">Genre</th>
-            <th class="align-mid">Has Teaser</th>
-            <th class="align-mid">Action</th>
+            <th class="align-center">Genre</th>
+            <th class="align-center">Has Teaser</th>
+            <th class="align-center">Action</th>
         </tr>
         <c:forEach items="${movie}" var="movie">
             <tr>
                 <td>${movie.getTitle()}</td>
-                <td class="align-mid"><f:setLocale value="en_US" /> <f:formatNumber
+                <td class="align-center"><f:setLocale value="en_US" /> <f:formatNumber
                         type="currency" value="${movie.getBoxOffice()}" minFractionDigits="0"></f:formatNumber></td>
-                <td class="align-mid">${movie.getGenre()}</td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center">${movie.getGenre()}</td>
+                <td class="align-center"><c:choose>
                         <c:when test="${movie.isHasTeaser()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-mid"><a href="AddToFavorite?movieId=${movie.getMovieId()}">Add
+                <td class="align-center"><a href="AddToFavorite?movieId=${movie.getMovieId()}">Add
                         to Favorite</a></td>
             </tr>
         </c:forEach>

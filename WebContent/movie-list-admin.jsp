@@ -16,29 +16,29 @@
         <tr>
             <th align="left" width=30%>Title</th>
             <th class="align-right">Box Office</th>
-            <th class="align-mid">Active</th>
-            <th class="align-mid">Date of Launch</th>
-            <th class="align-mid">Genre</th>
-            <th class="align-mid">Has Teaser</th>
-            <th class="align-mid">Action</th>
+            <th class="align-center">Active</th>
+            <th class="align-center">Date of Launch</th>
+            <th class="align-center">Genre</th>
+            <th class="align-center">Has Teaser</th>
+            <th class="align-center">Action</th>
         </tr>
         <c:forEach items="${movie}" var="movie">
             <tr>
                 <td>${movie.getTitle()}</td>
                 <td class="align-right"><f:setLocale value="en_US" /> <f:formatNumber
                         type="currency" value="${movie.getBoxOffice()}" minFractionDigits="0"></f:formatNumber></td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center"><c:choose>
                         <c:when test="${movie.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-mid"><f:formatDate value="${movie.getDateOfLaunch()}"
+                <td class="align-center"><f:formatDate value="${movie.getDateOfLaunch()}"
                         pattern="dd/MM/yyyy"></f:formatDate></td>
-                <td class="align-mid">${movie.getGenre()}</td>
-                <td class="align-mid"><c:choose>
+                <td class="align-center">${movie.getGenre()}</td>
+                <td class="align-center"><c:choose>
                         <c:when test="${movie.isHasTeaser()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-                <td class="align-mid"><a href="ShowEditMovie?movieId=${movie.getMovieId()}">Edit</a></td>
+                <td class="align-center"><a href="ShowEditMovie?movieId=${movie.getMovieId()}">Edit</a></td>
             </tr>
         </c:forEach>
     </table>

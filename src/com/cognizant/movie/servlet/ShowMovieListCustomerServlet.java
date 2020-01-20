@@ -18,13 +18,14 @@ import com.cognizant.movie.model.Movie;
  */
 @WebServlet("/ShowMovieListCustomer")
 public class ShowMovieListCustomerServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-    
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	    MovieDao movieDao = new MovieDaoCollectionImpl();
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        MovieDao movieDao = new MovieDaoCollectionImpl();
         List<Movie> movieList = movieDao.getMovieListCustomer();
         request.setAttribute("movie", movieList);
         request.getRequestDispatcher("movie-list-customer.jsp").forward(request, response);
-	}
+    }
 
 }

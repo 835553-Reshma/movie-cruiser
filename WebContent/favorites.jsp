@@ -24,17 +24,16 @@
         <tr>
             <th align="left" width=40%>Title</th>
             <th class="align-right">Box Office</th>
-            <th class="align-mid">Genre</th>
-            <th class="align-mid"></th>
+            <th class="align-center">Genre</th>
+            <th class="align-center"></th>
         </tr>
         <c:forEach items="${movie}" var="movie">
             <tr>
                 <td class="align-left">${movie.getTitle()}</td>
-                 <td class="align-mid"><f:setLocale value="en_US" /> <f:formatNumber
+                <td class="align-center"><f:setLocale value="en_US" /> <f:formatNumber
                         type="currency" value="${movie.getBoxOffice()}" minFractionDigits="0"></f:formatNumber></td>
-                <td class="align-mid">${movie.getGenre()}</td>
-               
-                <td class="align-mid"><a href="RemoveFavorite?movieId=${movie.getMovieId()}">
+                <td class="align-center">${movie.getGenre()}</td>
+                <td class="align-center"><a href="RemoveFavorite?movieId=${movie.getMovieId()}">
                         Delete</a></td>
 
             </tr>
